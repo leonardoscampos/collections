@@ -1,6 +1,6 @@
 namespace: leonardoscampos
-name: cloud
-version: 1.0.3
+name: cloudmonitoring
+version: 1.0.0
 readme: README.md
 authors:
 - Leonardo Campos
@@ -17,7 +17,7 @@ tags:
   - elk
   - graylog
 
-repository: "https://github.com/leonardoscampos/cloud"
-documentation: "https://github.com/leonardoscampos/cloud"
-homtepage: "https://github.com/leonardoscampos/cloud"
-issues: "https://github.com/leonardoscampos/cloud"
+repository: "https://github.com/leonardoscampos/collections/cloud"
+documentation: "https://github.com/leonardoscampos/collections/cloud"
+homtepage: "https://github.com/leonardoscampos/"
+issues: "https://github.com/leonardoscampos/collections/issues"
