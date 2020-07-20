@@ -1,0 +1,15 @@
+- hosts: cloud
+  tasks:
+  - name: Get infos on container
+    docker_container_info:
+      name: nginx_ansible
+    register: result
+
+  - name: Does container exist?
+    debug:
+      msg: "The container {{ 'exists' if result.exists else 'does not exist' }}"
+
+  - name: Print information about container
+    debug:
+      var: result.container
+    when: result.exists

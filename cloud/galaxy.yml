@@ -1,0 +1,23 @@
+namespace: leonardoscampos
+name: cloud
+version: 1.0.3
+readme: README.md
+authors:
+- Leonardo Campos
+description: "Collection for Cloud Monitoring"
+license:
+- 'MIT'
+tags:
+  - cloud
+  - monitoring
+  - zabbix
+  - splunk
+  - grafana
+  - docker
+  - elk
+  - graylog
+
+repository: "https://github.com/leonardoscampos/cloud"
+documentation: "https://github.com/leonardoscampos/cloud"
+homtepage: "https://github.com/leonardoscampos/cloud"
+issues: "https://github.com/leonardoscampos/cloud"

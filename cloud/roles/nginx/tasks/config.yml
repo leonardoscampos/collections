@@ -1,0 +1,7 @@
+---
+  - name: Tranfering config to nginx
+    copy:
+      src: "{{ item }}"
+      dest: "{{ nginx_dest }}"
+      mode: "{{ dir_mode }}"
+    with_items: "{{ nginx_src }}"

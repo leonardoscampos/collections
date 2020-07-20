@@ -1,0 +1,14 @@
+---
+  - name: Deploy Nginx container
+    docker_container:
+      name: "{{ nginx_container_name }}"
+      hostname: "{{ nginx_container_hostname }}"
+      image: "{{ nginx_container_image }}"
+      state: "{{ nginx_container_state }}"
+      restart_policy: "{{ nginx_container_restart_policy }}"
+      ports: "{{ nginx_container_ports }}"
+      networks:
+         - name: "{{ cloud_net }}"
+           ipv4_address: "{{ ipnginx }}"
+      purge_networks: yes
+      volumes: "{{ nginx_container_volumes }}"

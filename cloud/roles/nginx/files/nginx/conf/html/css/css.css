@@ -1,0 +1,61 @@
+body {
+	background-image: url("../images/bgblack2.jpg");
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.img {
+	display: inline-block;
+	margin-top: 5%;
+	margin-left: 10%;
+	margin-right: auto;
+	width: 20%;
+	padding: 20px;
+}
+
+.text {
+	display: inline-block;
+	margin-top: auto;
+	margin-left: 10%;
+	margin-right: auto;
+	width: 21%;
+	padding: 1px;
+	color: white;
+	font-size: 17px;
+	font-weight: bold;
+	text-align: left;
+	vertical-align: middle;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+	background-image: url("../images/brq.png");
+	background-repeat: no-repeat;
+	background-size: 120px 50px;
+	background-position: 20px;
+}
+
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav b {
+	float: right
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a.active {
+	background-color: #4CAF50;
+	color: white;
+}

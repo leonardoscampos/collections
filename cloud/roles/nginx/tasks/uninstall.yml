@@ -1,0 +1,21 @@
+---
+  - name: Destroing Nginx container
+    docker_container:
+      name: "{{ nginx_container_name }}"
+      state: absent
+      force_kill: yes
+
+  - name: Deleting directory structure
+    file:
+      path: "{{nginx_default_dir}}"
+      state: absent
+    tags:
+      - rmdir
+
+  - name: Deleting Volumes for Nginx
+    docker_volume:
+      name: '{{ item.vol }}'
+      state: absent
+    loop: "{{vol_loop}}"
+    tags:
+      - volume

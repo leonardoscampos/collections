@@ -1,0 +1,4 @@
+---
+- name: Restart nginx
+  command: "docker restart {{ nginx_container_name }}"
+  when: ansible_facts.virtualization_type != "docker"

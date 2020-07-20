@@ -1,0 +1,15 @@
+- hosts: cloud
+  gather_facts: yes
+  roles:
+    - role: nginx
+      tags: nginx
+    - role: elk
+      tags: elk
+    - role: splunk
+      tags: splunk
+    - role: zabbix
+      tags: zabbix
+    - role: grafana
+      tags: grafana
+    - role: graylog
+      tags: graylog
